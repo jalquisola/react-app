@@ -1,0 +1,81 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+body {
+  background: #456;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.app {
+  width: 400px;
+  margin: 16px auto;
+  font-size: 16px;
+}
+
+.app-header,
+.app div {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.app-header {
+  background: #28d;
+  padding: 20px;
+  font-size: 1.4em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.app-container {
+  background: #ebebeb;
+  padding: 12px;
+}
+
+.app div {
+  padding: 12px;
+}
+
+.app input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95em;
+}
+
+.app input[type="email"],
+.app input[type="text"],
+.app input[type="password"] {
+  background: #fff;
+  border-color: #bbb;
+  color: #555;
+}
+
+.app input[type="email"]:focus,
+.app input[type="text"]:focus,
+.app input[type="password"]:focus {
+  border-color: #888;
+}
+
+.app input[type="button"] {
+  background: #28d;
+  padding: 12px;
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.app input[type="button"]:disabled {
+  background: transparent;
+  border-color: #bbb;
+  color: #555;
+}
+
+.app input[type="button"]:focus {
+  border-color: #05a;
+}
