@@ -1,19 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 import Button from './Button';
 
-class Welcome extends Component {
-  render() {
-    return (
-      <div className='login-form'>
-        <h2 className='app-header'>Welcome, {this.props.name}!</h2>
-        <div className='app-container'>
-           <Button value='Logout' onClick={this.props.logout}/>
-        </div>
+const Welcome = (props) => {
+  return (
+    <div className='login-form'>
+      <h2 className='app-header'>Welcome, {props.name}!</h2>
+      <div className='app-container'>
+         <Button value='Logout' onClick={props.logout}/>
       </div>
-    )
-  }
+    </div>
+  )
 }
 
 Welcome.propTypes = {

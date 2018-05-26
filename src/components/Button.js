@@ -1,19 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
-class Button extends Component {
-  render() {
-    return (
-      <div>
-        <input
-          type='button'
-          disabled={this.props.disabled}
-          value={this.props.value}
-          onClick={this.props.onClick}
-        />
-      </div>
-    )
-  }
+const Button = (props) => {
+  return (
+    <div>
+      <input
+        type='button'
+        disabled={props.disabled}
+        value={props.value}
+        onClick={props.onClick}
+      />
+    </div>
+  )
 }
 
 Button.defaultProps = {
