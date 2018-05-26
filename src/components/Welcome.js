@@ -18,7 +18,7 @@ class Welcome extends Component {
 
 Welcome.propTypes = {
   name: PropTypes.string.isRequired,
-  logout: PropTypes.func.isRequired,
+  logout: PropTypes.func.isRequired
 }
 
 export default Welcome;

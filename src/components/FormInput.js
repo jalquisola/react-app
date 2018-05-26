@@ -19,7 +19,11 @@ class FormInput extends Component {
   render() {
     return (
       <div>
-        <input type={this.props.inputType} placeholder={this.props.name} name={this.props.name}  onChange={this.handleChange}/>
+        <input
+          type={this.props.inputType}
+          placeholder={this.props.labelText}
+          name={this.props.name}
+          onChange={this.handleChange}/>
       </div>
     )
   }
@@ -29,8 +33,7 @@ FormInput.propTypes = {
   name: PropTypes.string.isRequired,
   onChange: PropTypes.func,
   labelText: PropTypes.string.isRequired,
-  inputType: PropTypes.string.isRequired,
-  defaultValue: PropTypes.string
+  inputType: PropTypes.string.isRequired
 }
 
 export default FormInput;

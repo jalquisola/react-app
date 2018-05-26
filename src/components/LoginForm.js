@@ -28,7 +28,8 @@ class LoginForm extends Component {
 
 LoginForm.propTypes = {
   inputChange: PropTypes.func.isRequired,
-  createAccount: PropTypes.func.isRequired
+  createAccount: PropTypes.func.isRequired,
+  buttonDisabled: PropTypes.bool
 }
 
 export default LoginForm;
